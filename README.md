@@ -11,13 +11,13 @@ To explore or modify the project, follow these steps:
 **Step 1:** Clone the repository:
 
 ```bash
-git clone https://github.com/Abdullah-dev1/edusity-website.git
+git clone https://github.com/Abdullah-dev1/react-portfoilo.git
 ```
 
 **Step 2:** Navigate into the project folder:
 
 ```bash
-cd edusity-website
+cd react-portfoilo
 ```
 
 **Step 3:** Install the dependencies:
