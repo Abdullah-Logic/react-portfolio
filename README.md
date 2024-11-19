@@ -36,13 +36,7 @@ npm start
 
 **Core Technologies:**
 
-- React
-- Node.js
 - Email-js
-- Webpack
-- Babel
-- ESLint
-- Create React App (CRA)
 - Web Vitals
 - React icons
 
@@ -54,9 +48,6 @@ npm start
 
 **Major Dependencies:**
 
-- react
-- react-dom
-- react-scripts
 - email-js
 - emailjs-com
 
@@ -69,18 +60,16 @@ npm start
     /assets
     /components
         /about
-        /contact
-        /experience
-        /footer
-        /header
-        /nav
-        /portfolio
-        /services
-        app.js
-        index.css
-        index.js
+            About.jsx
+            about.css
+    app.js
+    index.css
+    index.js
  .gitignore
- pakage-lock.json
  pakage.json
  README.md
 ```
+
+## Demo
+
+For a live demo visit, https://muhammad-abdullah-portfolio-62tl7y4i3.vercel.app
