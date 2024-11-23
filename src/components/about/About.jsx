@@ -1,5 +1,5 @@
 import "./about.css";
-import ME from "../../assets/me-about.jpeg";
+import { meAbout } from "../../assets/image";
 import { FaAward } from "react-icons/fa6";
 import { LuUsers2 } from "react-icons/lu";
 import { GoProjectSymlink } from "react-icons/go";
@@ -13,7 +13,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="Me" />
+            <img src={meAbout} alt="Me" />
           </div>
         </div>
 
