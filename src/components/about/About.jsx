@@ -1,8 +1,6 @@
 import "./about.css";
 import { meAbout } from "../../assets/image";
-import { FaAward } from "react-icons/fa6";
-import { LuUsers2 } from "react-icons/lu";
-import { GoProjectSymlink } from "react-icons/go";
+import aboutCards from "../../const/about";
 
 const About = () => {
   return (
@@ -19,23 +17,13 @@ const About = () => {
 
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
-              <FaAward className="about__icon" />
-              <h5>Experience</h5>
-              <small>2+ Studying</small>
-            </article>
-
-            <article className="about__card">
-              <LuUsers2 className="about__icon" />
-              <h5>Clients</h5>
-              <small>None</small>
-            </article>
-
-            <article className="about__card">
-              <GoProjectSymlink className="about__icon" />
-              <h5>Projects</h5>
-              <small>20+</small>
-            </article>
+            {aboutCards.map(({ id, logo, heading, description }) => (
+              <article key={id} className="about__card">
+                <div className="about__icon">{logo}</div>
+                <h5>{heading}</h5>
+                <small>{description}</small>
+              </article>
+            ))}
           </div>
 
           <p>
