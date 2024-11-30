@@ -1,5 +1,6 @@
 import "./experience.css";
 import { MdVerified } from "react-icons/md";
+import { frontEnd, backEnd } from "../../const";
 
 const Experience = () => {
   return (
@@ -11,41 +12,15 @@ const Experience = () => {
         <div className="experience__frontend">
           <h3>Frontend Development</h3>
           <div className="experience__content">
-            <article className="experience__details">
-              <MdVerified className="experience__details-icon" />
-              <div>
-                <h4>HTML</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <MdVerified className="experience__details-icon" />
-              <div>
-                <h4>CSS</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <MdVerified className="experience__details-icon" />
-              <div>
-                <h4>JavaScript</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <MdVerified className="experience__details-icon" />
-              <div>
-                <h4>React</h4>
-                <small className="text-light">Intermediate</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <MdVerified className="experience__details-icon" />
-              <div>
-                <h4>C</h4>
-                <small className="text-light">Basic</small>
-              </div>
-            </article>
+            {frontEnd.map(({ id, language, status }) => (
+              <article className="experience__details" key={id}>
+                <MdVerified className="experience__details-icon" />
+                <div>
+                  <h4>{language}</h4>
+                  <small className="text-light">{status}</small>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
 
@@ -53,13 +28,15 @@ const Experience = () => {
 
         <div className="experience__backend">
           <h3>Backend Development</h3>
-          <article className="experience__details">
-            <MdVerified className="experience__details-icon" />
-            <div>
-              <h4>Python</h4>
-              <small className="text-light">Basic</small>
-            </div>
-          </article>
+          {backEnd.map(({ id, language, status }) => (
+            <article className="experience__details" key={id}>
+              <MdVerified className="experience__details-icon" />
+              <div>
+                <h4>{language}</h4>
+                <small className="text-light">{status}</small>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>

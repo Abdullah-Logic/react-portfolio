@@ -1,6 +1,6 @@
 import "./about.css";
 import { meAbout } from "../../assets/image";
-import aboutCards from "../../const/about";
+import { aboutCards } from "../../const";
 
 const About = () => {
   return (
