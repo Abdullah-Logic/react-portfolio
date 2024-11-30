@@ -32,13 +32,11 @@ npm install
 npm start
 ```
 
-## Technical documentation
+## Technical documentation 
 
 **Core Technologies:**
 
-- Email-js
-- Web Vitals
-- React icons
+- ReactJS
 
 **Key Functionalities:**
 
@@ -48,8 +46,10 @@ npm start
 
 **Major Dependencies:**
 
-- email-js
-- emailjs-com
+- [email-js](https://www.npmjs.com/package/email-js)
+- [emailjs-com](https://www.npmjs.com/package/emailjs-com)
+- [react-icons](https://www.npmjs.com/package/react-icons)
+- [web-vitals](https://www.npmjs.com/package/web-vitals)
 
 ## Structure
 
