@@ -1,8 +1,7 @@
 import "./contact.css";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
-import { MdOutlineEmail } from "react-icons/md";
-import { FaWhatsapp } from "react-icons/fa";
+import { contactOption } from "../../const";
 
 const Contact = () => {
   const form = useRef();
@@ -24,31 +23,16 @@ const Contact = () => {
 
       <div className="container contact__container">
         <div className="contact__options">
-          <article className="contact__option">
-            <MdOutlineEmail className="contact__option-icon" />
-            <h4>Email</h4>
-            <h5>abdullah.dev1@gmail.com</h5>
-            <a
-              href="mailto:abdullah.dev1@gmail.com"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Send a message
-            </a>
-          </article>
-
-          <article className="contact__option">
-            <FaWhatsapp className="contact__option-icon" />
-            <h4>Whatsapp</h4>
-            <h5>+92 331 559 0956</h5>
-            <a
-              href="https://api.whatsapp.com/send?phone=923315590956"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Send a message
-            </a>
-          </article>
+          {contactOption.map(({ id, logo, option, info, address }) => (
+            <article className="contact__option" key={id}>
+              <div className="contact__option-icon">{logo}</div>
+              <h4>{option}</h4>
+              <h5>{info}</h5>
+              <a href={address} target="_blank" rel="noreferrer">
+                Send a message
+              </a>
+            </article>
+          ))}
         </div>
         {/* END OF OPTIONS */}
 
