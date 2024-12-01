@@ -1,6 +1,5 @@
 import "./footer.css";
-import { FaFacebookF } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
+import { footerLink, footerSocials } from "../../const";
 
 const Footer = () => {
   return (
@@ -10,33 +9,23 @@ const Footer = () => {
       </a>
 
       <ul className="permalinks">
-        <li>
-          <a href="#header">Home</a>
-        </li>
-        <li>
-          <a href="#sbout">About</a>
-        </li>
-        <li>
-          <a href="#experience">Experience</a>
-        </li>
-        <li>
-          <a href="#services">Services</a>
-        </li>
-        <li>
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
+        {footerLink.map(({ id, section }) => {
+          const hrefValue = section.toLowerCase();
+
+          return (
+            <li key={id}>
+              <a href={`#${hrefValue}`}>{section}</a>
+            </li>
+          );
+        })}
       </ul>
 
       <div className="footer__socials">
-        <a href="https://www.facebook.com/profile.php?id=100075356611389">
-          <FaFacebookF />
-        </a>
-        <a href="https://www.instagram.com/a_b_d_u_l_l_a_h_._k_h_a_n/">
-          <FaInstagram />
-        </a>
+        {footerSocials.map(({ id, link, icon }) => (
+          <a href={link} key={id}>
+            {icon}
+          </a>
+        ))}
       </div>
     </footer>
   );

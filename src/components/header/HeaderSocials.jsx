@@ -1,33 +1,13 @@
-import { FiLinkedin } from "react-icons/fi";
-import { FaGithub } from "react-icons/fa";
-import { FiDribbble } from "react-icons/fi";
+import { headerSocials } from "../../const";
 
 const HeaderSocials = () => {
   return (
     <div className="header__socials">
-      <a
-        href="https://www.linkedin.com/in/muhammad-abdullah-a38b41306/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FiLinkedin />
-      </a>
-
-      <a
-        href="https://github.com/Abdullah-dev1"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaGithub />
-      </a>
-
-      <a
-        href="https://dribbble.com/Abdullah-dev08"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FiDribbble />
-      </a>
+      {headerSocials.map(({ id, icon, link }) => (
+        <a href={link} target="_blank" rel="noopener noreferrer" key={id}>
+          <div>{icon}</div>
+        </a>
+      ))}
     </div>
   );
 };
