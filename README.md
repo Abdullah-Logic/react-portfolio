@@ -32,13 +32,11 @@ npm install
 npm start
 ```
 
-## Technical documentation
+## Technical Documentation 
 
 **Core Technologies:**
 
-- Email-js
-- Web Vitals
-- React icons
+- ReactJS
 
 **Key Functionalities:**
 
@@ -48,8 +46,9 @@ npm start
 
 **Major Dependencies:**
 
-- email-js
-- emailjs-com
+- [email-js](https://www.npmjs.com/package/email-js)
+- [emailjs-com](https://www.npmjs.com/package/emailjs-com)
+- [react-icons](https://www.npmjs.com/package/react-icons)
 
 ## Structure
 
@@ -72,4 +71,4 @@ npm start
 
 ## Demo
 
-For a live demo visit, https://muhammad-abdullah-portfolio-62tl7y4i3.vercel.app
+For a live demo visit, https://react-portfoilo-mu.vercel.app/
