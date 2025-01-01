@@ -9,10 +9,10 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_xl5gfql",
-      "template_tzp8p2l",
+      process.env.REACT_APP_SERVICE_KEY,
+      process.env.REACT_APP_TEMPLATE_KEY,
       form.current,
-      "bnaEOCs8DyJqzH7Ab"
+      process.env.REACT_APP_PUBLIC_API_KEY
     );
     e.target.reset();
   };
