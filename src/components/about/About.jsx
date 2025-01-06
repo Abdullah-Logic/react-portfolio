@@ -1,25 +1,25 @@
-import "./about.css";
+import styles from "./about.module.css";
 import { meAbout } from "../../assets/image";
 import { aboutCards } from "../../const";
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="about" className={styles.about}>
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
-      <div className="container about__container">
-        <div className="about__me">
-          <div className="about__me-image">
+      <div className={styles.container}>
+        <div className={styles.about__me}>
+          <div className={styles.about__meImage}>
             <img src={meAbout} alt="Me" />
           </div>
         </div>
 
-        <div className="about__content">
-          <div className="about__cards">
+        <div className={styles.about__content}>
+          <div className={styles.about__cards}>
             {aboutCards.map(({ id, logo, heading, description }) => (
-              <article key={id} className="about__card">
-                <div className="about__icon">{logo}</div>
+              <article key={id} className={styles.about__card}>
+                <div className={styles.about__icon}>{logo}</div>
                 <h5>{heading}</h5>
                 <small>{description}</small>
               </article>
@@ -33,7 +33,7 @@ const About = () => {
             am now fully prepared and eager to begin my professional journey.
           </p>
 
-          <a href="#contact" className="btn btn-primary">
+          <a href="#contact" className={`${styles.btn} ${styles.btnPrimary}`}>
             Let's Talk
           </a>
         </div>

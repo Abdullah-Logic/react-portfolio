@@ -1,4 +1,4 @@
-import "./contact.css";
+import styles from "./contact.module.css";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
 import { contactOption } from "../../const";
@@ -17,15 +17,15 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <section id="contact">
+    <section id="contact" className={styles.contact}>
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 
-      <div className="container contact__container">
-        <div className="contact__options">
+      <div className={`${styles.container} ${styles.contact__container}`}>
+        <div className={styles.contact__options}>
           {contactOption.map(({ id, logo, option, info, address }) => (
-            <article className="contact__option" key={id}>
-              <div className="contact__option-icon">{logo}</div>
+            <article className={styles.contact__option} key={id}>
+              <div className={styles.contact__optionIcon}>{logo}</div>
               <h4>{option}</h4>
               <h5>{info}</h5>
               <a href={address} target="_blank" rel="noreferrer">
@@ -50,7 +50,7 @@ const Contact = () => {
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className={`${styles.btn} ${styles.btnPrimary}`}>
             Send Message
           </button>
         </form>

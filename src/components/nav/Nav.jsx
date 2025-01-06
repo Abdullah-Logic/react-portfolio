@@ -1,5 +1,5 @@
 import { navLink } from "../../const";
-import "./nav.css";
+import styles from "./nav.module.css";
 import { useState } from "react";
 
 const Nav = () => {
@@ -7,7 +7,7 @@ const Nav = () => {
     `#${navLink[0]?.section.toLowerCase()}`
   );
   return (
-    <nav>
+    <nav className={styles.nav}>
       {navLink.map(({ id, icon, section }) => {
         const hrefValue = section.toLowerCase();
         return (
@@ -15,7 +15,7 @@ const Nav = () => {
             key={id}
             href={`#${hrefValue}`}
             onClick={() => setActiveNav(`#${hrefValue}`)}
-            className={activeNav === `#${hrefValue}` ? "active" : ""}
+            className={activeNav === `#${hrefValue}` ? styles.active : ""}
           >
             {icon}
           </a>
