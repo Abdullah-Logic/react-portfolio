@@ -3,12 +3,12 @@ import { footerLink, footerSocials } from "../../const";
 
 const Footer = () => {
   return (
-    <footer id="footer" className={styles.footer}>
-      <a href="#header" className={styles.footer__logo}>
+    <footer id="footer">
+      <a href="#header" className={styles.footerLogo}>
         Abdullah
       </a>
 
-      <ul className={styles.permalinks}>
+      <ul className={styles.permaLinks}>
         {footerLink.map(({ id, section }) => {
           const hrefValue = section.toLowerCase();
 
@@ -20,7 +20,7 @@ const Footer = () => {
         })}
       </ul>
 
-      <div className={styles.footer__socials}>
+      <div className={styles.footerSocials}>
         {footerSocials.map(({ id, link, icon }) => (
           <a href={link} key={id}>
             {icon}

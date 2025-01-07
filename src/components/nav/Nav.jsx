@@ -7,7 +7,7 @@ const Nav = () => {
     `#${navLink[0]?.section.toLowerCase()}`
   );
   return (
-    <nav className={styles.nav}>
+    <nav>
       {navLink.map(({ id, icon, section }) => {
         const hrefValue = section.toLowerCase();
         return (

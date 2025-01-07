@@ -3,23 +3,23 @@ import styles from "./portfolio.module.css";
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className={styles.portfolio}>
+    <section id="portfolio">
       <h5>My recent work</h5>
       <h2>Portfolio</h2>
 
-      <div className={styles.container}>
+      <div className={`container ${styles.portfolioContainer} `}>
         {data.map(({ id, image, title, github }) => {
           return (
-            <article key={id} className={styles.portfolio__item}>
-              <div className={styles.portfolio__itemImage}>
+            <article key={id} className={styles.portfolioItem}>
+              <div className={styles.portfolioItemImage}>
                 <img src={image} alt={title} />
               </div>
               <h3>{title}</h3>
 
-              <div className={styles.portfolio__itemCta}>
+              <div className={styles.portfolioItemCta}>
                 <a
                   href={github}
-                  className={`${styles.btn} ${styles.btnPrimary}`}
+                  className="btn btn-primary"
                   target="_blank"
                   rel="noreferrer"
                 >

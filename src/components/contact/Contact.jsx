@@ -17,15 +17,17 @@ const Contact = () => {
     e.target.reset();
   };
   return (
-    <section id="contact" className={styles.contact}>
+    <section id="contact">
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 
-      <div className={`${styles.container} ${styles.contact__container}`}>
-        <div className={styles.contact__options}>
+      <div
+        className={` container ${styles.container} ${styles.contactContainer}`}
+      >
+        <div className={styles.contactOptions}>
           {contactOption.map(({ id, logo, option, info, address }) => (
-            <article className={styles.contact__option} key={id}>
-              <div className={styles.contact__optionIcon}>{logo}</div>
+            <article className={styles.contactOption} key={id}>
+              <div className={styles.contactOptionIcon}>{logo}</div>
               <h4>{option}</h4>
               <h5>{info}</h5>
               <a href={address} target="_blank" rel="noreferrer">
@@ -50,7 +52,7 @@ const Contact = () => {
             placeholder="Your Message"
             required
           ></textarea>
-          <button type="submit" className={`${styles.btn} ${styles.btnPrimary}`}>
+          <button type="submit" className="btn btn-primary">
             Send Message
           </button>
         </form>

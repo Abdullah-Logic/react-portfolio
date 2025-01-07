@@ -4,20 +4,20 @@ import { BiCheck } from "react-icons/bi";
 
 const Services = () => {
   return (
-    <section id="services" className={styles.services}>
+    <section id="services">
       <h5>What I Offer</h5>
       <h2>Services</h2>
 
-      <div className={styles.container}>
+      <div className={`container ${styles.servicesContainer} `}>
         <article className={styles.service}>
-          <div className={styles.service__head}>
+          <div className={styles.serviceHead}>
             <h3>UI/UX Design</h3>
           </div>
 
-          <ul className={styles.service__list}>
+          <ul className={styles.serviceList}>
             {design.map(({ id, description }) => (
               <li key={id}>
-                <BiCheck className={styles.service__listIcon} />
+                <BiCheck className={styles.serviceListIcon} />
                 <p>{description}</p>
               </li>
             ))}
@@ -26,14 +26,14 @@ const Services = () => {
         {/* END OF UI/UX  */}
 
         <article className={styles.service}>
-          <div className={styles.service__head}>
+          <div className={styles.serviceHead}>
             <h3>Web Development</h3>
           </div>
 
-          <ul className={styles.service__list}>
+          <ul className={styles.serviceList}>
             {webDev.map(({ id, description }) => (
               <li key={id}>
-                <BiCheck className={styles.service__listIcon} />
+                <BiCheck className={styles.serviceListIcon} />
                 <p>{description}</p>
               </li>
             ))}
@@ -42,14 +42,14 @@ const Services = () => {
         {/* END OF UI/UX  */}
 
         <article className={styles.service}>
-          <div className={styles.service__head}>
+          <div className={styles.serviceHead}>
             <h3>Content Creation</h3>
           </div>
 
-          <ul className={styles.service__list}>
+          <ul className={styles.serviceList}>
             {contentCreation.map(({ id, description }) => (
               <li key={id}>
-                <BiCheck className={styles.service__listIcon} />
+                <BiCheck className={styles.serviceListIcon} />
                 <p>{description}</p>
               </li>
             ))}

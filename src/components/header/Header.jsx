@@ -6,11 +6,11 @@ import HeaderSocial from "./HeaderSocials";
 
 const Header = () => {
   return (
-    <header id="header" className={styles.header}>
-      <div className={styles.container}>
+    <header id="header">
+      <div className={`container ${styles.headerContainer} `}>
         <h5>Hello I'm</h5>
         <h1>Muhammad Abdullah</h1>
-        <h5 className={styles.textLight}>Frontend Developer</h5>
+        <h5 className="text-light">Frontend Developer</h5>
         <CTA />
         <HeaderSocial />
 
@@ -18,7 +18,7 @@ const Header = () => {
           <img src={me} alt="me" />
         </div>
 
-        <a href="#contact" className={styles.scroll__down}>
+        <a href="#contact" className={styles.scrollDown}>
           <FaArrowDown />
         </a>
       </div>

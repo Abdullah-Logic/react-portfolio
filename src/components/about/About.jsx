@@ -4,22 +4,22 @@ import { aboutCards } from "../../const";
 
 const About = () => {
   return (
-    <section id="about" className={styles.about}>
+    <section id="about">
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
-      <div className={styles.container}>
-        <div className={styles.about__me}>
-          <div className={styles.about__meImage}>
+      <div className={` container ${styles.aboutContainer}`}>
+        <div className={styles.aboutMe}>
+          <div className={styles.aboutMeImage}>
             <img src={meAbout} alt="Me" />
           </div>
         </div>
 
-        <div className={styles.about__content}>
-          <div className={styles.about__cards}>
+        <div className={styles.aboutContent}>
+          <div className={styles.aboutCards}>
             {aboutCards.map(({ id, logo, heading, description }) => (
-              <article key={id} className={styles.about__card}>
-                <div className={styles.about__icon}>{logo}</div>
+              <article key={id} className={styles.aboutCard}>
+                <div className={styles.aboutIcon}>{logo}</div>
                 <h5>{heading}</h5>
                 <small>{description}</small>
               </article>
@@ -33,7 +33,7 @@ const About = () => {
             am now fully prepared and eager to begin my professional journey.
           </p>
 
-          <a href="#contact" className={`${styles.btn} ${styles.btnPrimary}`}>
+          <a href="#contact" className="btn btn-primary">
             Let's Talk
           </a>
         </div>
