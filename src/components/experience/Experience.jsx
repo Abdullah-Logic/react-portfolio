@@ -1,4 +1,4 @@
-import "./experience.css";
+import styles from "./experience.module.css";
 import { MdVerified } from "react-icons/md";
 import { frontEnd, backEnd } from "../../const";
 
@@ -8,13 +8,13 @@ const Experience = () => {
       <h5>What skills I have</h5>
       <h2>My Experience</h2>
 
-      <div className="container experience__container">
-        <div className="experience__frontend">
+      <div className={`container ${styles.experienceContainer} `}>
+        <div className={styles.experienceFrontend}>
           <h3>Frontend Development</h3>
-          <div className="experience__content">
+          <div className={styles.experienceContent}>
             {frontEnd.map(({ id, language, status }) => (
-              <article className="experience__details" key={id}>
-                <MdVerified className="experience__details-icon" />
+              <article className={styles.experienceDetails} key={id}>
+                <MdVerified className={styles.experienceDetailsIcon} />
                 <div>
                   <h4>{language}</h4>
                   <small className="text-light">{status}</small>
@@ -26,11 +26,11 @@ const Experience = () => {
 
         {/* END OF FRONTEND */}
 
-        <div className="experience__backend">
+        <div className={styles.experienceBackend}>
           <h3>Backend Development</h3>
           {backEnd.map(({ id, language, status }) => (
-            <article className="experience__details" key={id}>
-              <MdVerified className="experience__details-icon" />
+            <article className={styles.experienceDetails} key={id}>
+              <MdVerified className={styles.experienceDetailsIcon} />
               <div>
                 <h4>{language}</h4>
                 <small className="text-light">{status}</small>

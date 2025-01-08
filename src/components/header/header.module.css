@@ -4,7 +4,7 @@ header {
     overflow: hidden;
 }
 
-.header__container {
+.headerContainer {
     text-align: center;
     height: 100%;
     position: relative;
@@ -21,7 +21,7 @@ header {
 
 /* =============== Header Socials ============== */
 
-.header__socials {
+.headerSocials {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +31,7 @@ header {
     bottom: 3rem;
 }
 
-.header__socials::after {
+.headerSocials::after {
     content: ' ';
     width: 1px;
     height: 2rem;
@@ -54,7 +54,7 @@ header {
 
 /* =============== Scroll Down ============== */
 
-.scroll__down {
+.scrollDown {
     position: absolute;
     right: -2.3rem;
     bottom: 5rem;
@@ -77,8 +77,8 @@ header {
         height: 100vh;
     }
 
-    .header__socials,
-    .scroll__down {
+    .headerSocials,
+    .scrollDown {
         display: none;
     }
 }

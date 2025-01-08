@@ -1,5 +1,5 @@
 import { navLink } from "../../const";
-import "./nav.css";
+import styles from "./nav.module.css";
 import { useState } from "react";
 
 const Nav = () => {
@@ -15,7 +15,7 @@ const Nav = () => {
             key={id}
             href={`#${hrefValue}`}
             onClick={() => setActiveNav(`#${hrefValue}`)}
-            className={activeNav === `#${hrefValue}` ? "active" : ""}
+            className={activeNav === `#${hrefValue}` ? styles.active : ""}
           >
             {icon}
           </a>

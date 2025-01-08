@@ -1,14 +1,14 @@
-import "./footer.css";
+import styles from "./footer.module.css";
 import { footerLink, footerSocials } from "../../const";
 
 const Footer = () => {
   return (
     <footer id="footer">
-      <a href="#header" className="footer__logo">
+      <a href="#header" className={styles.footerLogo}>
         Abdullah
       </a>
 
-      <ul className="permalinks">
+      <ul className={styles.permaLinks}>
         {footerLink.map(({ id, section }) => {
           const hrefValue = section.toLowerCase();
 
@@ -20,7 +20,7 @@ const Footer = () => {
         })}
       </ul>
 
-      <div className="footer__socials">
+      <div className={styles.footerSocials}>
         {footerSocials.map(({ id, link, icon }) => (
           <a href={link} key={id}>
             {icon}

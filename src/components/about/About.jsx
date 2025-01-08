@@ -1,4 +1,4 @@
-import "./about.css";
+import styles from "./about.module.css";
 import { meAbout } from "../../assets/image";
 import { aboutCards } from "../../const";
 
@@ -8,18 +8,18 @@ const About = () => {
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
-      <div className="container about__container">
-        <div className="about__me">
-          <div className="about__me-image">
+      <div className={` container ${styles.aboutContainer}`}>
+        <div className={styles.aboutMe}>
+          <div className={styles.aboutMeImage}>
             <img src={meAbout} alt="Me" />
           </div>
         </div>
 
-        <div className="about__content">
-          <div className="about__cards">
+        <div className={styles.aboutContent}>
+          <div className={styles.aboutCards}>
             {aboutCards.map(({ id, logo, heading, description }) => (
-              <article key={id} className="about__card">
-                <div className="about__icon">{logo}</div>
+              <article key={id} className={styles.aboutCard}>
+                <div className={styles.aboutIcon}>{logo}</div>
                 <h5>{heading}</h5>
                 <small>{description}</small>
               </article>

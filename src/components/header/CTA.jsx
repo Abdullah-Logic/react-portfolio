@@ -1,6 +1,8 @@
+import styles from "./header.module.css";
+
 const CTA = () => {
   return (
-    <div className="cta">
+    <div className={styles.cta}>
       <a
         href="https://docs.google.com/document/d/1wctCQrFqjGCS9nr7dytPnAluL8aXJZ2c/edit?usp=sharing&ouid=110828699296883501870&rtpof=true&sd=true"
         className="btn"
