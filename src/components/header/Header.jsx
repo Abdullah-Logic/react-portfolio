@@ -1,7 +1,7 @@
 import { FaArrowDown } from "react-icons/fa";
 import "./header.css";
 import CTA from "./CTA";
-import { me } from "../../assets/image";
+import { me } from "../../assets/images";
 import HeaderSocial from "./HeaderSocials";
 
 const Header = () => {

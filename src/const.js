@@ -29,7 +29,7 @@ import {
     tribute,
     responsivebakery,
     portfolio,
-} from "./assets/image";
+} from "./assets/images";
 
 // End of portfolio imports
 
