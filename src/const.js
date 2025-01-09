@@ -107,7 +107,7 @@ export const frontEnd = [
     {
         id: 5,
         language: "React",
-        status: "Intermediate",
+        status: "Experienced",
     },
     {
         id: 6,
