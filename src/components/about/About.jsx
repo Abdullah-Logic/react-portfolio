@@ -1,5 +1,5 @@
 import styles from "./about.module.css";
-// import { meAbout } from "../../assets/image";
+import { meAbout } from "../../assets/images";
 import { aboutCards } from "../../const";
 
 const About = () => {
@@ -9,11 +9,11 @@ const About = () => {
       <h2>About Me</h2>
 
       <div className={` container ${styles.aboutContainer}`}>
-        {/* <div className={styles.aboutMe}>
+        <div className={styles.aboutMe}>
           <div className={styles.aboutMeImage}>
             <img src={meAbout} alt="Me" />
           </div>
-        </div> */}
+        </div>
 
         <div className={styles.aboutContent}>
           <div className={styles.aboutCards}>
