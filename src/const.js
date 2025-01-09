@@ -148,7 +148,7 @@ export const footerSocials = [
         icon: <FaFacebookF />,
     },
     {
-        id: 1,
+        id: 2,
         link: "https://www.instagram.com/a_b_d_u_l_l_a_h_._k_h_a_n/",
         icon: <FaInstagram />,
     },
