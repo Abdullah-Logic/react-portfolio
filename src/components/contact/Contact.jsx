@@ -1,4 +1,4 @@
-import "./contact.css";
+import styles from "./contact.module.css";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
 import { contactOption } from "../../const";
@@ -9,10 +9,10 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_xl5gfql",
-      "template_tzp8p2l",
+      process.env.REACT_APP_SERVICE_KEY,
+      process.env.REACT_APP_TEMPLATE_KEY,
       form.current,
-      "bnaEOCs8DyJqzH7Ab"
+      process.env.REACT_APP_PUBLIC_API_KEY
     );
     e.target.reset();
   };
@@ -21,11 +21,13 @@ const Contact = () => {
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 
-      <div className="container contact__container">
-        <div className="contact__options">
+      <div
+        className={` container ${styles.container} ${styles.contactContainer}`}
+      >
+        <div className={styles.contactOptions}>
           {contactOption.map(({ id, logo, option, info, address }) => (
-            <article className="contact__option" key={id}>
-              <div className="contact__option-icon">{logo}</div>
+            <article className={styles.contactOption} key={id}>
+              <div className={styles.contactOptionIcon}>{logo}</div>
               <h4>{option}</h4>
               <h5>{info}</h5>
               <a href={address} target="_blank" rel="noreferrer">

@@ -10,14 +10,14 @@ footer a {
     color: var(--color-bg);
 }
 
-.footer__logo {
+.footerLogo {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 2rem;
     display: inline-block;
 }
 
-.parmalinks {
+.parmaLinks {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -25,7 +25,7 @@ footer a {
     margin: 0 auto 3rem;
 }
 
-.footer__socials {
+.footerSocials {
     display: flex;
     justify-content: center;
     gap: 1rem;
@@ -33,7 +33,7 @@ footer a {
     margin-bottom: 4rem;
 }
 
-.footer__socials a {
+.footerSocials a {
     background: var(--color-bg);
     color: var(--color-white);
     padding: 0.8rem;
@@ -42,7 +42,7 @@ footer a {
     border: 1px solid transparent;
 }
 
-.footer__socials a:hover {
+.footerSocials a:hover {
     background: transparent;
     color: var(--color-bg);
     border-color: var(--color-bg);
@@ -52,12 +52,12 @@ footer a {
 /* =========== MEDIA QURIES (Small devices) ========== */
 
 @media screen and (max-width: 600px) {
-    .permalinks {
+    .permaLinks {
         flex-direction: column;
         gap: 1.5rem;
     }
 
-    .footer__socials {
+    .footerSocials {
         margin-bottom: 2.6rem;
     }
 }
