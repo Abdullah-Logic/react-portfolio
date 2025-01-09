@@ -34,11 +34,6 @@ import {
 
 // End of portfolio imports
 
-import { FaFacebookF } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
-
-// End of footer imports
-
 // End of imports
 
 export const aboutCards = [
@@ -151,13 +146,13 @@ export const footerLink = [
 export const footerSocials = [
     {
         id: 1,
-        link: "https://www.facebook.com/profile.php?id=100075356611389",
-        icon: <FaFacebookF />,
+        link: "https://www.linkedin.com/in/muhammad-abdullah-a38b41306/",
+        icon: <FiLinkedin />,
     },
     {
-        id: 1,
-        link: "https://www.instagram.com/a_b_d_u_l_l_a_h_._k_h_a_n/",
-        icon: <FaInstagram />,
+        id: 2,
+        link: "https://github.com/Abdullah-dev1",
+        icon: <FaGithub />,
     },
 ]
 

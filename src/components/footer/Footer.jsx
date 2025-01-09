@@ -8,6 +8,14 @@ const Footer = () => {
         Abdullah
       </a>
 
+      <div className={styles.footerSocials}>
+        {footerSocials.map(({ id, link, icon }) => (
+          <a href={link} key={id} target="_blank" rel="noopener noreferrer">
+            {icon}
+          </a>
+        ))}
+      </div>
+
       <ul className={styles.permaLinks}>
         {footerLink.map(({ id, section }) => {
           const hrefValue = section.toLowerCase();
@@ -19,14 +27,6 @@ const Footer = () => {
           );
         })}
       </ul>
-
-      <div className={styles.footerSocials}>
-        {footerSocials.map(({ id, link, icon }) => (
-          <a href={link} key={id}>
-            {icon}
-          </a>
-        ))}
-      </div>
     </footer>
   );
 };
