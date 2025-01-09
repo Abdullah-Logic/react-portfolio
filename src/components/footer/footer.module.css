@@ -52,6 +52,22 @@ footer a {
     content: "";
 }
 
+.permaLinks li {
+    display: inline-block;
+    margin: 0 0.5rem 5rem 0.5rem;
+}
+
+.permaLinks li::after {
+    content: "|";
+    position: absolute;
+    margin: 0 7px;
+    color: var(--color-bg);
+}
+
+.permaLinks li:last-child::after {
+    content: "";
+}
+
 .footerSocials {
     display: flex;
     justify-content: center;
