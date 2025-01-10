@@ -16,12 +16,11 @@ footer a {
     display: inline-block;
 }
 
-.parmaLinks {
+.permaLinks {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2rem;
-    margin: 0 auto 3rem;
+    margin: 0 auto 1rem;
 }
 
 .permaLinks li {
@@ -69,10 +68,14 @@ footer a {
 @media screen and (max-width: 600px) {
     .permaLinks {
         flex-direction: column;
-        gap: 1.5rem;
+        margin-bottom: 5rem;
     }
 
-    .footerSocials {
-        margin-bottom: 2.6rem;
+    .permaLinks li {
+        margin: 0;
+    }
+
+    .permaLinks li::after {
+        content: " ";
     }
 }
