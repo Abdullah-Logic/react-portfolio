@@ -1,5 +1,4 @@
 import { FaAward } from "react-icons/fa6";
-import { LuUsers2 } from "react-icons/lu";
 import { GoProjectSymlink } from "react-icons/go";
 
 // End of aboutCards imports
@@ -9,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 // End of contactOption imports
 
-import { FiDribbble } from "react-icons/fi";
+import { SiLeetcode } from "react-icons/si";
 import { FiLinkedin } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 
@@ -30,7 +29,7 @@ import {
     tribute,
     responsivebakery,
     portfolio,
-} from "./assets/image";
+} from "./assets/images";
 
 // End of portfolio imports
 
@@ -50,12 +49,6 @@ export const aboutCards = [
     },
     {
         id: 2,
-        logo: <LuUsers2 />,
-        heading: "Clients",
-        description: "None",
-    },
-    {
-        id: 3,
         logo: <GoProjectSymlink />,
         heading: "Projects",
         description: "20+",
@@ -155,7 +148,7 @@ export const footerSocials = [
         icon: <FaFacebookF />,
     },
     {
-        id: 1,
+        id: 2,
         link: "https://www.instagram.com/a_b_d_u_l_l_a_h_._k_h_a_n/",
         icon: <FaInstagram />,
     },
@@ -176,8 +169,8 @@ export const headerSocials = [
     },
     {
         id: 3,
-        link: "https://dribbble.com/Abdullah-dev08",
-        icon: <FiDribbble />,
+        link: "https://leetcode.com/u/Muhammad-Abdullah-dev/",
+        icon: <SiLeetcode />,
     },
 ]
 
