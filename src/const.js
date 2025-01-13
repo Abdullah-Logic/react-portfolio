@@ -94,13 +94,18 @@ export const frontEnd = [
     },
     {
         id: 4,
-        language: "React",
+        language: "TypeScript",
         status: "Intermediate",
     },
     {
         id: 5,
-        language: "C",
-        status: "Basic",
+        language: "React",
+        status: "Experienced",
+    },
+    {
+        id: 6,
+        language: "Next.js",
+        status: "Intermediate",
     },
 ]
 
@@ -109,6 +114,42 @@ export const backEnd = [
         id: 1,
         language: "Python",
         status: "Basic",
+    },
+    {
+        id: 2,
+        language: "C",
+        status: "Basic",
+    },
+]
+
+export const tools = [
+    {
+        id: 1,
+        language: "Git",
+        status: "Experienced",
+    },
+    {
+        id: 2,
+        language: "GitHub",
+        status: "Experienced",
+    },
+    {
+        id: 3,
+        language: "Figma",
+        status: "intermediate",
+    },
+    {
+        id: 4,
+        language: "Vercel",
+        status: "intermediate",
+    },
+]
+
+export const other = [
+    {
+        id: 1,
+        language: "Prompt Engineering",
+        status: "Experienced",
     },
 ]
 
