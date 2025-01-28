@@ -14,10 +14,13 @@ footer a {
     font-size: 2rem;
     font-weight: 500;
     display: inline-block;
+    border-radius: 5px;
+    padding: 2px;
 }
 
 .footerLogo:hover {
-    font-size: 2.1rem;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .permaLinks {
@@ -33,20 +36,21 @@ footer a {
 }
 
 .permaLinks li:hover {
-    font-size: 16px;
     font-weight: bold;
+    text-decoration: underline;
 }
 
-/* .permaLinks li::after {
+.permaLinks li::after {
     content: "|";
     position: absolute;
     margin: 0 7px;
     color: var(--color-bg);
+    font-weight: 400;
 }
 
 .permaLinks li:last-child::after {
     content: "";
-} */
+}
 
 .footerSocials {
     display: flex;

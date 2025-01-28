@@ -119,7 +119,7 @@ export const backEnd = [
 export const footerLink = [
     {
         id: 1,
-        section: "Header",
+        section: "Home",
     },
     {
         id: 2,
