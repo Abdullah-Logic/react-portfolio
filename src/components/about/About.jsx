@@ -1,5 +1,5 @@
 import styles from "./about.module.css";
-import { meAbout } from "../../assets/image";
+import { meAbout } from "../../assets/images";
 import { aboutCards } from "../../const";
 
 const About = () => {

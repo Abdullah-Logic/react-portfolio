@@ -1,5 +1,4 @@
 import { FaAward } from "react-icons/fa6";
-import { LuUsers2 } from "react-icons/lu";
 import { GoProjectSymlink } from "react-icons/go";
 
 // End of aboutCards imports
@@ -9,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 // End of contactOption imports
 
-import { FiDribbble } from "react-icons/fi";
+import { SiLeetcode } from "react-icons/si";
 import { FiLinkedin } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
 
@@ -30,7 +29,7 @@ import {
     tribute,
     responsivebakery,
     portfolio,
-} from "./assets/image";
+} from "./assets/images";
 
 // End of portfolio imports
 
@@ -45,12 +44,6 @@ export const aboutCards = [
     },
     {
         id: 2,
-        logo: <LuUsers2 />,
-        heading: "Clients",
-        description: "None",
-    },
-    {
-        id: 3,
         logo: <GoProjectSymlink />,
         heading: "Projects",
         description: "20+",
@@ -96,13 +89,18 @@ export const frontEnd = [
     },
     {
         id: 4,
-        language: "React",
+        language: "TypeScript",
         status: "Intermediate",
     },
     {
         id: 5,
-        language: "C",
-        status: "Basic",
+        language: "React",
+        status: "Experienced",
+    },
+    {
+        id: 6,
+        language: "Next.js",
+        status: "Intermediate",
     },
 ]
 
@@ -111,6 +109,42 @@ export const backEnd = [
         id: 1,
         language: "Python",
         status: "Basic",
+    },
+    {
+        id: 2,
+        language: "C",
+        status: "Basic",
+    },
+]
+
+export const tools = [
+    {
+        id: 1,
+        language: "Git",
+        status: "Experienced",
+    },
+    {
+        id: 2,
+        language: "GitHub",
+        status: "Experienced",
+    },
+    {
+        id: 3,
+        language: "Figma",
+        status: "intermediate",
+    },
+    {
+        id: 4,
+        language: "Vercel",
+        status: "intermediate",
+    },
+]
+
+export const other = [
+    {
+        id: 1,
+        language: "Prompt Engineering",
+        status: "Experienced",
     },
 ]
 
@@ -171,8 +205,8 @@ export const headerSocials = [
     },
     {
         id: 3,
-        link: "https://dribbble.com/Abdullah-dev08",
-        icon: <FiDribbble />,
+        link: "https://leetcode.com/u/Muhammad-Abdullah-dev/",
+        icon: <SiLeetcode />,
     },
 ]
 
