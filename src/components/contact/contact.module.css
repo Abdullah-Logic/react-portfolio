@@ -36,9 +36,49 @@
     font-size: 0.8rem;
 }
 
+.contactOption a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    color: var(--color-primary);
+}
+
 .contactOption h5 {
     color: var(--color-light);
 }
+
+.inputField {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.inputField:focus {
+    outline: none;
+    border-color: var(--color-light);
+}
+
+.inputError {
+    border: 2px solid red !important;
+}
+
+.warningText {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+input:-webkit-autofill {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: var(--color-white) !important;
+}
+
+input:-webkit-autofill:focus {
+    transition: background-color 5000s ease-in-out 0s;
+    -webkit-text-fill-color: var(--color-white) !important;
+}
+
 
 /* =============== FORM =============== */
 
