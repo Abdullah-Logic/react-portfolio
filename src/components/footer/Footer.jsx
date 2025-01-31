@@ -1,5 +1,5 @@
 import styles from "./footer.module.css";
-import { footerLink, footerSocials } from "../../const";
+import { footerLink, Socials } from "../../const";
 
 const Footer = () => {
   return (
@@ -7,6 +7,14 @@ const Footer = () => {
       <a href="#header" className={styles.footerLogo}>
         Abdullah
       </a>
+
+      <div className={styles.footerSocials}>
+        {Socials.map(({ id, link, icon }) => (
+          <a href={link} key={id} target="_blank" rel="noopener noreferrer">
+            {icon}
+          </a>
+        ))}
+      </div>
 
       <ul className={styles.permaLinks}>
         {footerLink.map(({ id, section }) => {
@@ -19,14 +27,6 @@ const Footer = () => {
           );
         })}
       </ul>
-
-      <div className={styles.footerSocials}>
-        {footerSocials.map(({ id, link, icon }) => (
-          <a href={link} key={id}>
-            {icon}
-          </a>
-        ))}
-      </div>
     </footer>
   );
 };
