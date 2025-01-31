@@ -1,10 +1,10 @@
-import { headerSocials } from "../../const";
+import { Socials } from "../../const";
 import styles from "./header.module.css";
 
 const HeaderSocials = () => {
   return (
     <div className={styles.headerSocials}>
-      {headerSocials.map(({ id, icon, link }) => (
+      {Socials.map(({ id, icon, link }) => (
         <a href={link} target="_blank" rel="noopener noreferrer" key={id}>
           <div>{icon}</div>
         </a>

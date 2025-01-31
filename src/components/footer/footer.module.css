@@ -18,9 +18,11 @@ footer a {
     padding: 2px;
 }
 
-.footerLogo:hover {
+.footerLogo:hover,
+.permaLinks li a:hover {
     font-weight: bold;
     text-decoration: underline;
+    color: var(--color-bg);
 }
 
 .permaLinks {
@@ -35,37 +37,12 @@ footer a {
     margin: 0 0.5rem 5rem 0.5rem;
 }
 
-.permaLinks li:hover {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.permaLinks li::after {
+.permaLinks li:not(:last-child)::after {
     content: "|";
     position: absolute;
     margin: 0 7px;
     color: var(--color-bg);
     font-weight: 400;
-}
-
-.permaLinks li:last-child::after {
-    content: "";
-}
-
-.permaLinks li {
-    display: inline-block;
-    margin: 0 0.5rem 5rem 0.5rem;
-}
-
-.permaLinks li::after {
-    content: "|";
-    position: absolute;
-    margin: 0 7px;
-    color: var(--color-bg);
-}
-
-.permaLinks li:last-child::after {
-    content: "";
 }
 
 .footerSocials {
@@ -91,8 +68,7 @@ footer a {
     border-color: var(--color-bg);
 }
 
-
-/* =========== MEDIA QURIES (Small devices) ========== */
+/* =========== MEDIA QUERIES (Small Devices) ========== */
 
 @media screen and (max-width: 600px) {
     .permaLinks {
@@ -105,6 +81,6 @@ footer a {
     }
 
     .permaLinks li::after {
-        content: " ";
+        content: none !important;
     }
 }

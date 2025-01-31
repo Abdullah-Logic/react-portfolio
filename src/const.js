@@ -11,8 +11,9 @@ import { FaWhatsapp } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { FiLinkedin } from "react-icons/fi";
 import { FaGithub } from "react-icons/fa";
+import { SiWakatime } from "react-icons/si";
 
-// End of headerSocials imports
+// End of Socials imports
 
 import { IoHomeOutline } from "react-icons/io5";
 import { FaRegUser } from "react-icons/fa";
@@ -177,22 +178,9 @@ export const footerLink = [
     },
 ]
 
-export const footerSocials = [
-    {
-        id: 1,
-        link: "https://www.linkedin.com/in/muhammad-abdullah-a38b41306/",
-        icon: <FiLinkedin />,
-    },
-    {
-        id: 2,
-        link: "https://github.com/Abdullah-dev1",
-        icon: <FaGithub />,
-    },
-]
-
 // End of Footer
 
-export const headerSocials = [
+export const Socials = [
     {
         id: 1,
         link: "https://www.linkedin.com/in/muhammad-abdullah-a38b41306/",
@@ -208,9 +196,14 @@ export const headerSocials = [
         link: "https://leetcode.com/u/Muhammad-Abdullah-dev/",
         icon: <SiLeetcode />,
     },
+    {
+        id: 4,
+        link: "https://wakatime.com/@abdullah_dev",
+        icon: <SiWakatime />,
+    },
 ]
 
-// End of HeaderSocials
+// End of Socials
 
 export const navLink = [
     {
