@@ -55,7 +55,7 @@
 
 .inputField:focus {
     outline: none;
-    border-color: var(--color-light);
+    border-color: var(--color-primary);
 }
 
 .inputError {
@@ -67,6 +67,40 @@
     font-size: 0.9rem;
     margin-top: 5px;
     display: inline-block;
+}
+
+.errorMessage {
+    color: var(--color-white);
+    background: red;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.successMessage {
+    color: var(--color-white);
+    background: green;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.closeButton {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 0.9rem;
+    color: var(--color-white);
+}
+
+.closeButton:hover {
+    cursor: pointer;
 }
 
 input:-webkit-autofill {
