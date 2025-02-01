@@ -210,26 +210,31 @@ export const navLink = [
         id: 1,
         icon: <IoHomeOutline />,
         section: "header",
+        tooltip: "Home",
     },
     {
         id: 2,
         icon: <FaRegUser />,
         section: "about",
+        tooltip: "about",
     },
     {
         id: 3,
         icon: <BsBriefcase />,
         section: "experience",
+        tooltip: "experience",
     },
     {
         id: 4,
         icon: <LiaToolsSolid />,
         section: "services",
+        tooltip: "services",
     },
     {
         id: 5,
         icon: <BiMessageDetail />,
         section: "contact",
+        tooltip: "contact",
     },
 ]
 
