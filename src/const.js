@@ -185,21 +185,25 @@ export const Socials = [
         id: 1,
         link: "https://www.linkedin.com/in/Abdullah-Logic/",
         icon: <FiLinkedin />,
+        tooltip: "Linkedin",
     },
     {
         id: 2,
         link: "https://github.com/Abdullah-Logic",
         icon: <FaGithub />,
+        tooltip: "GitHub",
     },
     {
         id: 3,
         link: "https://leetcode.com/u/Muhammad-Abdullah-dev/",
         icon: <SiLeetcode />,
+        tooltip: "LeetCode",
     },
     {
         id: 4,
         link: "https://wakatime.com/@Abdullah_Logic",
         icon: <SiWakatime />,
+        tooltip: "WakaTime",
     },
 ]
 

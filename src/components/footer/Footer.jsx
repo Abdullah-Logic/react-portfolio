@@ -9,11 +9,23 @@ const Footer = () => {
       </a>
 
       <div className={styles.footerSocials}>
-        {Socials.map(({ id, link, icon }) => (
-          <a href={link} key={id} target="_blank" rel="noopener noreferrer">
-            {icon}
-          </a>
-        ))}
+        {Socials.map(({ id, icon, link, tooltip }) => {
+          const tooltipValue =
+            tooltip.charAt(0).toUpperCase() + tooltip.slice(1);
+
+          return (
+            <a
+              href={link}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={id}
+              className={styles.tooltipContainer}
+            >
+              <div className={styles.icon}>{icon}</div>
+              <span className={styles.tooltip}>{tooltipValue}</span>
+            </a>
+          );
+        })}
       </div>
 
       <ul className={styles.permaLinks}>
