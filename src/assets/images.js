@@ -8,3 +8,4 @@ export { default as tribute } from './tribute.png';
 export { default as responsivebakery } from './responsive-bakery.png';
 export { default as portfolio } from './portfolio.png';
 export { default as edusity } from './edusity.png'
+export { default as reactportfolio } from "./react-portfolio.png";

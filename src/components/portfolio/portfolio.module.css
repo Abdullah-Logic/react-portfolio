@@ -65,7 +65,7 @@
 
 .swiperbutton {
     border: none;
-    position: relative;
+    position: absolute;
     background: transparent;
     font-size: 40px;
     color: var(--color-primary);
@@ -75,11 +75,12 @@
 }
 
 .buttonNext {
-    left: calc(83% + 100px);
+    left: calc(88% + 100px);
 }
 
 .buttonPrev {
-    left: calc(17% - 100px);
+    left: calc(12% - 100px);
+    transform: rotate(180deg);
 }
 
 .swiperbutton:hover {
@@ -89,8 +90,71 @@
 
 .disabled,
 .disabled:hover {
-    color: var(--color-primary-variant);
-    cursor: default;
+    display: none;
+}
+
+/* ========= Custom Arrows ========= */
+
+.arrowButton {
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    gap: 4px;
+    transition: all 0.3s ease;
+}
+
+.arrowButton:hover {
+    animation: move 2s infinite ease;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.round {
+    width: 6px;
+    height: 6px;
+    background: var(--color-bg);
+    border: var(--color-primary) solid 1px;
+    border-radius: 50%;
+}
+
+.line {
+    display: flex;
+    gap: 4px;
+}
+
+.two {
+    transform: translateX(10px);
+}
+
+.three {
+    transform: translateX(20px);
+}
+
+.four {
+    transform: translateX(30px);
+}
+
+.five {
+    transform: translateX(20px);
+}
+
+.six {
+    transform: translateX(10px);
 }
 
 /* =========== MEDIA QURIES (Medium devices) ========== */
@@ -98,29 +162,21 @@
 @media screen and (max-width: 1024px) {
     .swiperbutton {
         border: none;
-        position: relative;
+        position: absolute;
         background: transparent;
         font-size: 40px;
         color: var(--color-primary);
-        bottom: -1rem;
+        bottom: -2rem;
         left: 50%;
         transform: translate(-100%);
-        padding: 0 5rem;
     }
-}
 
-/* =========== MEDIA QURIES (Small devices) ========== */
+    .buttonNext {
+        left: calc(50% + 100px);
+    }
 
-@media screen and (max-width: 400px) {
-    .swiperbutton {
-        border: none;
-        position: relative;
-        background: transparent;
-        font-size: 40px;
-        color: var(--color-primary);
-        bottom: -1rem;
-        left: 50%;
-        transform: translate(-100%);
-        padding: 0 2rem;
+    .buttonPrev {
+        left: calc(50% - 100px);
+        transform: rotate(180deg);
     }
 }

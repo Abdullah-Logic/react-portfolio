@@ -1,10 +1,9 @@
 import { useRef, useState } from "react";
 import { data } from "../../const";
 import styles from "./portfolio.module.css";
+import NavArrow from "./navArrow";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FaGreaterThan } from "react-icons/fa";
-import { FaLessThan } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -23,7 +22,6 @@ const Portfolio = () => {
     <section className={styles.portfolio}>
       <h5>My recent work</h5>
       <h2>Portfolio</h2>
-
       <Swiper
         className={`container ${styles.portfolioContainer}`}
         modules={[Navigation]}
@@ -70,7 +68,7 @@ const Portfolio = () => {
             <h3>{title}</h3>
             <p className={`text-light ${styles.portfolioDesc}`}>{desc}</p>
             <p className={`${styles.portfolioTech}`}>
-              <b>Tech Stack:</b>
+              <b>Tech Stack: </b>
               <span className="text-light">{tech}</span>
             </p>
             <div className={styles.portfolioItemCta}>
@@ -91,7 +89,6 @@ const Portfolio = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-
       <button
         className={`${styles.buttonPrev} ${styles.swiperbutton} ${
           isBeginning ? styles.disabled : ""
@@ -99,7 +96,7 @@ const Portfolio = () => {
         onClick={() => swiperRef.current?.slidePrev()}
         disabled={isBeginning}
       >
-        <FaLessThan />
+        <NavArrow />
       </button>
       <button
         className={`${styles.buttonNext} ${styles.swiperbutton} ${
@@ -108,7 +105,7 @@ const Portfolio = () => {
         onClick={() => swiperRef.current?.slideNext()}
         disabled={isEnd}
       >
-        <FaGreaterThan />
+        <NavArrow />
       </button>
     </section>
   );
