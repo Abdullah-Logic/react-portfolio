@@ -1,3 +1,7 @@
+.portfolio {
+    position: relative;
+}
+
 .portfolioContainer {
   display: grid;
   gap: 2.5rem;
@@ -41,7 +45,9 @@
   }
 }
 
-/* =========== MEDIA QURIES (Small devices) ========== */
+    .buttonNext {
+        left: calc(50% + 100px);
+    }
 
 @media screen and (width <= 600px) {
   .portfolioContainer {
