@@ -1,9 +1,9 @@
 footer {
     background: var(--color-primary);
-    padding: 3rem 0;
-    text-align: center;
     font-size: 0.9rem;
     margin-top: 7rem;
+    padding: 3rem 0;
+    text-align: center;
 }
 
 footer a {
@@ -11,18 +11,18 @@ footer a {
 }
 
 .footerLogo {
+    border-radius: 5px;
+    display: inline-block;
     font-size: 2rem;
     font-weight: 500;
-    display: inline-block;
-    border-radius: 5px;
     padding: 2px;
 }
 
 .footerLogo:hover,
 .permaLinks li a:hover {
+    color: var(--color-bg);
     font-weight: bold;
     text-decoration: underline;
-    color: var(--color-bg);
 }
 
 .permaLinks {
@@ -34,62 +34,62 @@ footer a {
 
 .permaLinks li {
     display: inline-block;
-    margin: 0 0.5rem 5rem 0.5rem;
+    margin: 0 0.5rem 5rem;
 }
 
 .permaLinks li:not(:last-child)::after {
-    content: "|";
-    position: absolute;
-    margin: 0 7px;
     color: var(--color-bg);
+    content: "|";
     font-weight: 400;
+    margin: 0 7px;
+    position: absolute;
 }
 
 .footerSocials {
     display: flex;
-    justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
+    justify-content: center;
     margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
 .icon {
     background: var(--color-bg);
-    color: var(--color-white);
-    padding: 0.8rem;
-    border-radius: 50%;
-    display: flex;
     border: 1px solid transparent;
+    border-radius: 50%;
+    color: var(--color-white);
+    display: flex;
+    padding: 0.8rem;
 }
 
 .icon:hover {
     background: transparent;
-    color: var(--color-bg);
     border-color: var(--color-bg);
+    color: var(--color-bg);
 }
 
 /* ========== Tooltip ============ */
 
 .tooltipContainer {
-    position: relative;
     display: inline-block;
+    position: relative;
 }
 
 .tooltip {
-    position: absolute;
-    bottom: 110%;
-    left: 50%;
-    transform: translateX(-50%);
     background-color: var(--color-bg);
-    color: var(--color-white);
-    padding: 1px 8px 1px 8px;
-    font-size: 0.85rem;
     border: 1px solid var(--color-white);
     border-radius: 5px;
-    white-space: nowrap;
+    bottom: 110%;
+    color: var(--color-white);
+    font-size: 0.85rem;
+    left: 50%;
     opacity: 0;
-    visibility: hidden;
+    padding: 1px 8px;
+    position: absolute;
+    transform: translateX(-50%);
     transition: opacity 0.2s ease-in-out, visibility 0.2s;
+    visibility: hidden;
+    white-space: nowrap;
 }
 
 .tooltipContainer:hover .tooltip {
@@ -99,7 +99,7 @@ footer a {
 
 /* =========== MEDIA QUERIES (Small Devices) ========== */
 
-@media screen and (max-width: 600px) {
+@media screen and (width <= 600px) {
     .permaLinks {
         flex-direction: column;
         margin-bottom: 5rem;
