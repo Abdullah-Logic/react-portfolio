@@ -33,6 +33,7 @@ import {
     portfolio,
     edusity,
     reactportfolio,
+    quizapp,
 } from "./assets/images";
 
 // End of portfolio imports
@@ -50,7 +51,7 @@ export const aboutCards = [
         id: 2,
         logo: <GoProjectSymlink />,
         heading: "Projects",
-        description: "20+",
+        description: "10+",
     },
 ]
 
@@ -61,8 +62,8 @@ export const contactOption = [
         id: 1,
         logo: <MdOutlineEmail />,
         option: "Email",
-        info: "abdullah.dev1@gmail.com",
-        address: "mailto:abdullah.dev1@gmail.com",
+        info: "mabdullah.talk@gmail.com",
+        address: "mailto:mabdullah.talk@gmail.com",
     },
     {
         id: 2,
@@ -198,7 +199,7 @@ export const Socials = [
     },
     {
         id: 3,
-        link: "https://leetcode.com/u/Muhammad-Abdullah-dev/",
+        link: "https://leetcode.com/u/Abdullah-Logic/",
         icon: <SiLeetcode />,
         tooltip: "LeetCode",
     },
@@ -259,7 +260,7 @@ export const data = [
         image: reactportfolio,
         title: "React Portfolio",
         desc: "A fully functional, dynamic and responsive portfolio made with react to showcase skills and achievements (For Client).",
-        tech: "React, Email-js, React-Icons, Swiper.js",
+        tech: "React.js, Email-js, React-Icons, Swiper.js",
         github:
             "https://github.com/Abdullah-Logic/react-portfoilo",
         demo: "https://react-portfoilo-mu.vercel.app/",
@@ -269,13 +270,22 @@ export const data = [
         image: edusity,
         title: "Edusity Website",
         desc: "This is a clone of the Edusity website replicating its features and functionality (Practice Project).",
-        tech: "React, ReCaptcha, React-Icons",
+        tech: "React.js, ReCaptcha, React-Icons",
         github:
             "https://github.com/Abdullah-Logic/edusity-website",
         demo: "https://edusity-website-pearl.vercel.app/",
     },
     {
         id: 3,
+        image: quizapp,
+        title: "Quiz Applicaton",
+        desc: "A full-stack quiz app built with React, featuring a custom backend and API for dynamic question handling and scoring (Practice Project).",
+        tech: "React.js, Node.js, Express.js, Redux, MongoDb, Axios",
+        github:
+            "https://github.com/Abdullah-Logic/quiz-app",
+    },
+    {
+        id: 4,
         image: responsivebakery,
         title: "Virtual Bakery",
         desc: "This is a responsive bakery website made using HTML, CSS, and JavaScript to showcase client's different product (Practice Project).",
@@ -283,7 +293,7 @@ export const data = [
         github: "https://github.com/Abdullah-Logic/bakery-responsive.git",
     },
     {
-        id: 4,
+        id: 5,
         image: techdoc,
         title: "Technical Documentation Page",
         desc: "This is a technical documentation page made that has all the information about Algorithms (Practice Project).",
@@ -292,7 +302,7 @@ export const data = [
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/technical_doc_page",
     },
     {
-        id: 5,
+        id: 6,
         image: biakitchen,
         title: "Bia's Baking Kitchen",
         desc: "This is a bakery website for an online bakery made to reveal its products to the world.",
@@ -301,7 +311,7 @@ export const data = [
         demo: "https://biasbakingkitchen.tiiny.site",
     },
     {
-        id: 6,
+        id: 7,
         image: landingpage,
         title: "Product Landing Page",
         desc: "This is a simple product landing page made for newly launched prducts (Practice Project).",
@@ -310,7 +320,7 @@ export const data = [
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/landing_page",
     },
     {
-        id: 7,
+        id: 8,
         image: tribute,
         title: "Tribute Page",
         desc: "This tribute page honors the lives and achievements of influential figures, highlighting their impact on society. (Practice Project).",
@@ -319,7 +329,7 @@ export const data = [
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/tribute_page",
     },
     {
-        id: 8,
+        id: 9,
         image: portfolio,
         title: "Simple Portfolio Page",
         desc: "This is a simple portfolio page made to show my skills and work.",
