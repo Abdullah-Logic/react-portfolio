@@ -86,6 +86,13 @@ const Portfolio = () => {
                 </a>
               )}
             </div>
+            <div>
+              <p className={`${styles.indication} text-light`}>
+                <span className={styles.indicationArrows}>{"<<<"}</span>
+                Swipe to navigate
+                <span className={styles.indicationArrows}>{">>>"}</span>
+              </p>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
