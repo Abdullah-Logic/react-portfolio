@@ -88,10 +88,7 @@
   cursor: pointer;
 }
 
-.disabled {
-  display: none;
-}
-
+.disabled,
 .indication {
   display: none;
 }

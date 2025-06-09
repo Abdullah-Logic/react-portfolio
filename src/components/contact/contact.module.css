@@ -93,7 +93,7 @@ textarea {
 .errorMessage {
   background: red;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+  box-shadow: 0 2px 5px rgba(0 0 0 / 10%);
   color: var(--color-white);
   font-size: 0.9rem;
   padding: 10px;
@@ -103,7 +103,7 @@ textarea {
 .successMessage {
   background: green;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+  box-shadow: 0 2px 5px rgba(0 0 0 / 10%);
   color: var(--color-white);
   font-size: 0.9rem;
   padding: 10px;

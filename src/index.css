@@ -13,9 +13,9 @@
   --color-bg: #2c3e50;
   --color-bg-variant: #3d5c7c;
   --color-primary: #f1d1a5;
-  --color-primary-variant: rgb(198 156 109 / 40%);
+  --color-primary-variant: rgba(198 156 109 / 40%);
   --color-white: #fff;
-  --color-light: rgb(255 255 255 / 60%);
+  --color-light: rgba(255 255 255 / 60%);
   --transition: all 400ms ease;
   --container-width-lg: 75%;
   --container-width-md: 86%;
