@@ -1,62 +1,70 @@
 nav {
-    backdrop-filter: blur(15px);
-    background: rgb(0 0 0 / 30%);
-    border-radius: 3rem;
-    bottom: 2rem;
-    display: block;
-    display: flex;
-    gap: 0.8rem;
-    left: 50%;
-    padding: 0.7rem 1.7rem;
-    position: fixed;
-    transform: translateX(-50%);
-    width: max-content;
-    z-index: 2;
+  backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3rem;
+  bottom: 2rem;
+  display: flex;
+  gap: 0.8rem;
+  left: 50%;
+  padding: 0.7rem 1.7rem;
+  position: fixed;
+  transform: translateX(-50%);
+  width: max-content;
+  z-index: 2;
 }
 
 nav a {
-    background: transparent;
-    border-radius: 50%;
-    color: var(--color-light);
-    display: flex;
-    font-size: 1.1rem;
-    padding: 0.9rem;
+  background: transparent;
+  border-radius: 50%;
+  color: var(--color-light);
+  display: flex;
+  font-size: 1.1rem;
+  padding: 0.9rem;
 }
 
 nav a:hover {
-    background: rgb(0 0 0 / 20%);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 nav a.active {
-    background: var(--color-bg);
-    color: var(--color-white);
+  background: var(--color-bg);
+  color: var(--color-white);
 }
 
 /* --------Tooltip Styles--------- */
 
 .tooltipContainer {
-    display: inline-block;
-    position: relative;
+  display: inline-block;
+  position: relative;
 }
 
 .tooltip {
-    background-color: var(--color-bg);
-    border: 1px solid var(--color-primary);
-    border-radius: 5px;
-    bottom: 130%;
-    color: var(--color-white);
-    font-size: 0.85rem;
-    left: 50%;
-    opacity: 0;
-    padding: 1px 8px;
-    position: absolute;
-    transform: translateX(-50%);
-    transition: opacity 0.2s ease-in-out, visibility 0.2s;
-    visibility: hidden;
-    white-space: nowrap;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  bottom: 130%;
+  color: var(--color-white);
+  font-size: 0.85rem;
+  left: 50%;
+  opacity: 0;
+  padding: 1px 8px;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: opacity 0.2s ease-in-out, visibility 0.2s;
+  visibility: hidden;
+  white-space: nowrap;
 }
 
 .tooltipContainer:hover .tooltip {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* =========== MEDIA QURIES (Small devices) ========== */
+
+@media screen and (width <= 600px) {
+  nav {
+    gap: 0;
+    padding: 0.7rem;
+  }
 }
