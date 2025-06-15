@@ -89,32 +89,37 @@ export const contactOption = [
 export const frontEnd = [
     {
         id: 1,
-        language: "HTML",
-        status: "Experienced",
-    },
-    {
-        id: 2,
-        language: "CSS",
-        status: "Experienced",
-    },
-    {
-        id: 3,
-        language: "JavaScript",
-        status: "Experienced",
-    },
-    {
-        id: 4,
-        language: "TypeScript",
-        status: "Intermediate",
-    },
-    {
-        id: 5,
         language: "React",
         status: "Experienced",
     },
     {
-        id: 6,
+        id: 2,
         language: "Next.js",
+        status: "Intermediate",
+    },
+    {
+        id: 3,
+        language: "TypeScript",
+        status: "Intermediate",
+    },
+    {
+        id: 4,
+        language: "JavaScript",
+        status: "Experienced",
+    },
+    {
+        id: 5,
+        language: "HTML",
+        status: "Experienced",
+    },
+    {
+        id: 6,
+        language: "CSS",
+        status: "Experienced",
+    },
+    {
+        id: 7,
+        language: "Tailwind CSS",
         status: "Intermediate",
     },
 ]
@@ -127,7 +132,22 @@ export const backEnd = [
     },
     {
         id: 2,
-        language: "C",
+        language: "Node.js",
+        status: "Basic",
+    },
+    {
+        id: 3,
+        language: "Express.js",
+        status: "Basic",
+    },
+    {
+        id: 4,
+        language: "Python",
+        status: "Basic",
+    },
+    {
+        id: 5,
+        language: "MongoDB",
         status: "Basic",
     },
 ]
@@ -146,12 +166,17 @@ export const tools = [
     {
         id: 3,
         language: "Figma",
-        status: "intermediate",
+        status: "Intermediate",
     },
     {
         id: 4,
         language: "Vercel",
-        status: "intermediate",
+        status: "Intermediate",
+    },
+    {
+        id: 5,
+        language: "Canva",
+        status: "Experienced",
     },
 ]
 
