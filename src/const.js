@@ -127,26 +127,21 @@ export const frontEnd = [
 export const backEnd = [
     {
         id: 1,
-        language: "Python",
-        status: "Basic",
-    },
-    {
-        id: 2,
         language: "Node.js",
         status: "Basic",
     },
     {
-        id: 3,
+        id: 2,
         language: "Express.js",
         status: "Basic",
     },
     {
-        id: 4,
+        id: 3,
         language: "Python",
         status: "Basic",
     },
     {
-        id: 5,
+        id: 4,
         language: "MongoDB",
         status: "Basic",
     },
