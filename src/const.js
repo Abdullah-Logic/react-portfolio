@@ -89,7 +89,7 @@ export const contactOption = [
 export const frontEnd = [
     {
         id: 1,
-        language: "React",
+        language: "React.js",
         status: "Experienced",
     },
     {
