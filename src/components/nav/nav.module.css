@@ -62,9 +62,22 @@ nav a.active {
 
 /* =========== MEDIA QURIES (Small devices) ========== */
 
-@media screen and (width <= 600px) {
+@media screen and (width <= 500px) {
   nav {
     gap: 0;
     padding: 0.7rem;
+  }
+}
+
+/* =========== MEDIA QURIES (Extra Small devices) ========== */
+
+@media screen and (width <= 370px) {
+  nav {
+    gap: 0;
+    padding: 0.7rem;
+  }
+
+  nav a {
+    padding: 0.6rem;
   }
 }

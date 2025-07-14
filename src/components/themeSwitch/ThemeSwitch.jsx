@@ -3,14 +3,13 @@ import { FaRegSun } from "react-icons/fa6";
 import { IoMoonOutline } from "react-icons/io5";
 import styles from "./themeSwitch.module.css";
 import { useTheme } from "../../hooks/useTheme";
-import ModeLabel from "./ModeLabel";
 
 const ThemeSwitch = () => {
   const { darkMode, toggleTheme } = useTheme();
 
   return (
     <div className={styles.switchWrapper}>
-      <label className={styles.switchContainer}>
+      <label className={`${styles.switchContainer} ${styles.tooltipContainer}`}>
         <input
           className={styles.switchInput}
           type="checkbox"
@@ -29,9 +28,13 @@ const ThemeSwitch = () => {
         </span>
 
         <span className={styles.screenReaderOnly}>Dark Mode</span>
-      </label>
 
-      <ModeLabel darkMode={darkMode} />
+        <span className={styles.tooltip}>
+          <span className={styles.modeText}>
+            {darkMode ? "Dark Mode" : "Light Mode"}
+          </span>
+        </span>
+      </label>
     </div>
   );
 };

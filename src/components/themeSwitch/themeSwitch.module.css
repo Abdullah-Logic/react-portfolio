@@ -1,18 +1,10 @@
 .switchWrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 1rem;
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  z-index: 99999;
 }
 
 .switchContainer {
   position: relative;
   width: 4em;
-  height: 2.25em;
   border: solid transparent 2px;
   border-radius: 999px;
   background-color: rgba(0, 0, 0, 0.3);
@@ -102,26 +94,38 @@
 }
 
 .switchLabel {
-  margin-left: 0.5rem;
-  margin-top: 0.3rem;
-  font-size: 0.875rem;
-  font-weight: bold;
   color: var(--color-white);
   position: relative;
-  width: 5.5rem;
-  height: 1.5rem;
-  overflow: hidden;
 }
 
 .modeText {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
   transition: opacity 0.4s ease;
   white-space: nowrap;
 }
 
-.modeText.visible {
+.tooltipContainer {
+  display: inline-block;
+  position: relative;
+}
+
+.tooltip {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  bottom: 130%;
+  color: var(--color-white);
+  font-size: 0.85rem;
+  left: 50%;
+  opacity: 0;
+  padding: 1px 8px;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: opacity 0.2s ease-in-out, visibility 0.2s;
+  visibility: hidden;
+  white-space: nowrap;
+}
+
+.tooltipContainer:hover .tooltip {
   opacity: 1;
+  visibility: visible;
 }
