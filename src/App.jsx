@@ -6,10 +6,11 @@ import Services from "./components/myServices/Services";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
+import Container from "./components/container/container";
 
 const App = () => {
   return (
-    <div>
+    <Container>
       <Header />
       <Nav />
       <About />
@@ -18,7 +19,7 @@ const App = () => {
       <Portfolio />
       <Contact />
       <Footer />
-    </div>
+    </Container>
   );
 };
 

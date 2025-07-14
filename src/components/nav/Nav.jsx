@@ -1,6 +1,8 @@
 import { navLink } from "../../const";
 import styles from "./nav.module.css";
 import { useState, useEffect } from "react";
+import React from "react";
+import ThemeSwitch from "../themeSwitch/ThemeSwitch";
 
 const Tooltip = ({ text, children }) => (
   <div className={styles.tooltipContainer}>
@@ -57,22 +59,25 @@ const Nav = () => {
 
   return (
     <nav>
-      {navLink.map(({ id, icon, section, tooltip }) => {
+      {navLink.map(({ id, icon, section, tooltip }, index) => {
         const hrefValue = `#${section.toLowerCase()}`;
         const tooltipValue = tooltip.charAt(0).toUpperCase() + tooltip.slice(1);
         return (
-          <Tooltip key={id} text={tooltipValue}>
-            <a
-              href={hrefValue}
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavClick(hrefValue);
-              }}
-              className={activeNav === hrefValue ? styles.active : ""}
-            >
-              {icon}
-            </a>
-          </Tooltip>
+          <React.Fragment key={id}>
+            <Tooltip text={tooltipValue}>
+              <a
+                href={hrefValue}
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick(hrefValue);
+                }}
+                className={activeNav === hrefValue ? styles.active : ""}
+              >
+                {icon}
+              </a>
+            </Tooltip>
+            {index === 2 && <ThemeSwitch />}
+          </React.Fragment>
         );
       })}
     </nav>
