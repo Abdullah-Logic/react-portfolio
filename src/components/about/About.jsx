@@ -20,7 +20,7 @@ const About = () => {
             {aboutCards.map(({ id, logo, heading, description }) => (
               <article key={id} className={styles.aboutCard}>
                 <div className={styles.aboutIcon}>{logo}</div>
-                <h5>{heading}</h5>
+                <h5 aria-level="3">{heading}</h5>
                 <small>{description}</small>
               </article>
             ))}

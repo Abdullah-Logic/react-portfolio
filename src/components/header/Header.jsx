@@ -11,12 +11,14 @@ const Header = () => {
       <div className={`container ${styles.headerContainer} `}>
         <h5>Hello I'm</h5>
         <h1>{name}</h1>
-        <h5 className="text-light">{role}</h5>
+        <h5 className="text-light" aria-level="3">
+          {role}
+        </h5>
         <CTA />
         <HeaderSocial />
 
         <div className={styles.me}>
-          <img src={me} alt="my header" loading="lazy" />
+          <img src={me} alt="my header" loading="eager" fetchpriority="high" />
         </div>
 
         <a

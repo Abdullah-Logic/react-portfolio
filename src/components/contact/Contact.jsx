@@ -134,7 +134,7 @@ const Contact = () => {
                 {logo}
               </div>
               <h4>{option}</h4>
-              <h5>{info}</h5>
+              <h5 aria-level="3">{info}</h5>
               <a href={address} target="_blank" rel="noreferrer">
                 Send a message
               </a>
