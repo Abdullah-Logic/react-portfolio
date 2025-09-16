@@ -18,7 +18,14 @@ const Header = () => {
         <HeaderSocial />
 
         <div className={styles.me}>
-          <img src={me} alt="my header" loading="eager" fetchpriority="high" />
+          <img
+            src={me}
+            alt="my header"
+            loading="eager"
+            fetchpriority="high"
+            height="480"
+            width="352"
+          />
         </div>
 
         <a

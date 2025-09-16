@@ -11,7 +11,15 @@ const About = () => {
       <div className={` container ${styles.aboutContainer}`}>
         <div className={styles.aboutMe}>
           <div className={styles.aboutMeImage}>
-            <img src={meAbout} alt="my about" loading="lazy" />
+            <img
+              src={meAbout}
+              alt="my about"
+              loading="lazy"
+              style={{
+                width: "100%",
+                aspectRatio: "1 / 1",
+              }}
+            />
           </div>
         </div>
 
