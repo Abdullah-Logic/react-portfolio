@@ -11,16 +11,29 @@ const Header = () => {
       <div className={`container ${styles.headerContainer} `}>
         <h5>Hello I'm</h5>
         <h1>{name}</h1>
-        <h5 className="text-light">{role}</h5>
+        <h5 className="text-light" aria-level="3">
+          {role}
+        </h5>
         <CTA />
         <HeaderSocial />
 
         <div className={styles.me}>
-          <img src={me} alt="me" />
+          <img
+            src={me}
+            alt="my header"
+            loading="eager"
+            fetchpriority="high"
+            height="480"
+            width="352"
+          />
         </div>
 
-        <a href="#contact" className={styles.scrollDown}>
-          <FaArrowDown />
+        <a
+          href="#contact"
+          className={styles.scrollDown}
+          aria-label="scroll down"
+        >
+          <FaArrowDown aria-hidden="true" />
         </a>
       </div>
     </header>

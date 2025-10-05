@@ -11,7 +11,15 @@ const About = () => {
       <div className={` container ${styles.aboutContainer}`}>
         <div className={styles.aboutMe}>
           <div className={styles.aboutMeImage}>
-            <img src={meAbout} alt="Me" />
+            <img
+              src={meAbout}
+              alt="my about"
+              loading="lazy"
+              style={{
+                width: "100%",
+                aspectRatio: "1 / 1",
+              }}
+            />
           </div>
         </div>
 
@@ -20,7 +28,7 @@ const About = () => {
             {aboutCards.map(({ id, logo, heading, description }) => (
               <article key={id} className={styles.aboutCard}>
                 <div className={styles.aboutIcon}>{logo}</div>
-                <h5>{heading}</h5>
+                <h5 aria-level="3">{heading}</h5>
                 <small>{description}</small>
               </article>
             ))}
