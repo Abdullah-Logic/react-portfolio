@@ -10,3 +10,4 @@ export { default as portfolio } from './portfolio.webp';
 export { default as edusity } from './edusity.webp'
 export { default as reactportfolio } from "./react-portfolio.webp";
 export { default as quizapp } from "./quiz-app.webp";
+export { default as nextapp } from "./converso.webp";
