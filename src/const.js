@@ -34,6 +34,7 @@ import {
     edusity,
     reactportfolio,
     quizapp,
+    nextapp,
 } from "./assets/images";
 
 // End of portfolio imports
@@ -297,6 +298,15 @@ export const data = [
     },
     {
         id: 2,
+        image: nextapp,
+        title: "Saas App",
+        desc: "This is a fully working AI integrated online academy website (Practice Project).",
+        tech: "Next.js, React, TypeScript, Tailwind, Clerk, Supabase, Zod, Radix UI, Sentry, Lottie, Vapi AI, Shadcn",
+        github:
+            "https://github.com/Abdullah-Logic/saas-app",
+    },
+    {
+        id: 3,
         image: edusity,
         title: "Edusity Website",
         desc: "This is a clone of the Edusity website replicating its features and functionality (Practice Project).",
@@ -306,7 +316,7 @@ export const data = [
         demo: "https://edusity-website-pearl.vercel.app/",
     },
     {
-        id: 3,
+        id: 4,
         image: quizapp,
         title: "Quiz Application",
         desc: "A full-stack quiz app built with React, featuring a custom backend and API for dynamic question handling and scoring (Practice Project).",
@@ -315,7 +325,7 @@ export const data = [
             "https://github.com/Abdullah-Logic/quiz-app",
     },
     {
-        id: 4,
+        id: 5,
         image: responsivebakery,
         title: "Virtual Bakery",
         desc: "This is a responsive bakery website made using HTML, CSS, and JavaScript to showcase client's different product (Practice Project).",
@@ -323,7 +333,7 @@ export const data = [
         github: "https://github.com/Abdullah-Logic/bakery-responsive.git",
     },
     {
-        id: 5,
+        id: 6,
         image: techdoc,
         title: "Technical Documentation Page",
         desc: "This is a technical documentation page made that has all the information about Algorithms (Practice Project).",
@@ -332,7 +342,7 @@ export const data = [
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/technical_doc_page",
     },
     {
-        id: 6,
+        id: 7,
         image: biakitchen,
         title: "Bia's Baking Kitchen",
         desc: "This is a bakery website for an online bakery made to reveal its products to the world.",
@@ -341,7 +351,7 @@ export const data = [
         demo: "https://biasbakingkitchen.tiiny.site",
     },
     {
-        id: 7,
+        id: 8,
         image: landingpage,
         title: "Product Landing Page",
         desc: "This is a simple product landing page made for newly launched prducts (Practice Project).",
@@ -350,7 +360,7 @@ export const data = [
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/landing_page",
     },
     {
-        id: 8,
+        id: 9,
         image: tribute,
         title: "Tribute Page",
         desc: "This tribute page honors the lives and achievements of influential figures, highlighting their impact on society. (Practice Project).",
@@ -359,7 +369,7 @@ export const data = [
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/tribute_page",
     },
     {
-        id: 9,
+        id: 10,
         image: portfolio,
         title: "Simple Portfolio Page",
         desc: "This is a simple portfolio page made to show my skills and work.",
