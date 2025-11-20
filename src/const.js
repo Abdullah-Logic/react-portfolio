@@ -174,6 +174,16 @@ export const tools = [
         language: "Canva",
         status: "Experienced",
     },
+    {
+        id: 6,
+        language: "Clerk",
+        status: "Intermediate",
+    },
+    {
+        id: 7,
+        language: "Vapi AI",
+        status: "Intermediate",
+    },
 ]
 
 export const other = [
@@ -181,6 +191,11 @@ export const other = [
         id: 1,
         language: "Prompt Engineering",
         status: "Experienced",
+    },
+    {
+        id: 2,
+        language: "AI Integration",
+        status: "Intermediate",
     },
 ]
 
@@ -299,9 +314,9 @@ export const data = [
     {
         id: 2,
         image: nextapp,
-        title: "Saas App",
-        desc: "This is a fully working AI integrated online academy website (Practice Project).",
-        tech: "Next.js, React, TypeScript, Tailwind, Clerk, Supabase, Zod, Radix UI, Sentry, Lottie, Vapi AI, Shadcn",
+        title: "AI Learning App",
+        desc: "This is a complete SaaS online academy platform enhanced with AI integration (Practice Project).",
+        tech: "Next.js, React.js, TypeScript, Tailwind, Clerk, Supabase, Zod, Radix UI, Sentry, Lottie, Vapi AI, Shadcn",
         github:
             "https://github.com/Abdullah-Logic/saas-app",
     },
@@ -336,7 +351,7 @@ export const data = [
         id: 6,
         image: techdoc,
         title: "Technical Documentation Page",
-        desc: "This is a technical documentation page made that has all the information about Algorithms (Practice Project).",
+        desc: "This is a technical documentation page made that has all the information about Algorithms.",
         tech: "HTML, CSS",
         github:
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/technical_doc_page",
@@ -354,7 +369,7 @@ export const data = [
         id: 8,
         image: landingpage,
         title: "Product Landing Page",
-        desc: "This is a simple product landing page made for newly launched prducts (Practice Project).",
+        desc: "This is a simple product landing page made for newly launched prducts.",
         tech: "HTML, CSS",
         github:
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/landing_page",
@@ -363,7 +378,7 @@ export const data = [
         id: 9,
         image: tribute,
         title: "Tribute Page",
-        desc: "This tribute page honors the lives and achievements of influential figures, highlighting their impact on society. (Practice Project).",
+        desc: "This tribute page honors the lives and achievements of influential figures, highlighting their impact on society.",
         tech: "HTML, CSS",
         github:
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/tribute_page",
