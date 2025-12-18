@@ -319,6 +319,7 @@ export const data = [
         tech: "Next.js, React.js, TypeScript, Tailwind, Clerk, Supabase, Zod, Radix UI, Sentry, Lottie, Vapi AI, Shadcn",
         github:
             "https://github.com/Abdullah-Logic/saas-app",
+        demo: "https://saas-app-abdullah-dev-1.vercel.app/",
     },
     {
         id: 3,
@@ -346,6 +347,7 @@ export const data = [
         desc: "This is a responsive bakery website made using HTML, CSS, and JavaScript to showcase client's different product (Practice Project).",
         tech: "HTML, CSS, JS",
         github: "https://github.com/Abdullah-Logic/bakery-responsive.git",
+        demo: "https://responsive-bakery-mu.vercel.app/",
     },
     {
         id: 6,
