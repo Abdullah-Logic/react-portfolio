@@ -1,5 +1,5 @@
 export { default as bgTexture } from './bg-texture.png';
-export { default as meAbout } from './me-about.jpeg';
+export { default as meAbout } from './me-about.webp';
 export { default as me } from './me.webp';
 export { default as biakitchen } from './bia-kitchen.webp';
 export { default as landingpage } from './landing.webp';
@@ -10,3 +10,11 @@ export { default as portfolio } from './portfolio.webp';
 export { default as edusity } from './edusity.webp'
 export { default as reactportfolio } from "./react-portfolio.webp";
 export { default as quizapp } from "./quiz-app.webp";
+export { default as aiCrews } from "./aiagent.jpeg";
+export { default as blessHomeopathy } from "./blesshomeo.jpeg";
+export { default as goflixNow } from "./goflixnow.jpeg";
+export { default as gptProfessor } from "./gptprofessor.jpeg";
+export { default as iamScientist } from "./iamscientist.jpeg";
+export { default as ieltsAgent } from "./ieltsagent.jpeg";
+export { default as intelliwriter } from "./intelliwriter.jpeg";
+export { default as sigmapublisher } from "./sigmapublisher.jpeg";

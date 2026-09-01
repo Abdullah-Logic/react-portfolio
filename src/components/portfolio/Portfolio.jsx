@@ -72,14 +72,16 @@ const Portfolio = () => {
               <span className="text-light">{tech}</span>
             </p>
             <div className={styles.portfolioItemCta}>
-              <a
-                href={github}
-                className="btn btn-primary"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Github
-              </a>
+              {github && (
+                <a
+                  href={github}
+                  className="btn btn-primary"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Github
+                </a>
+              )}
               {demo && (
                 <a href={demo} className="btn" target="_blank" rel="noreferrer">
                   Demo
