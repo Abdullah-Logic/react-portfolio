@@ -34,6 +34,14 @@ import {
     edusity,
     reactportfolio,
     quizapp,
+    aiCrews,
+    blessHomeopathy,
+    goflixNow,
+    gptProfessor,
+    iamScientist,
+    ieltsAgent,
+    intelliwriter,
+    sigmapublisher,
 } from "./assets/images";
 
 // End of portfolio imports
@@ -41,7 +49,7 @@ import {
 // End of imports
 
 export const name = "Muhammad Abdullah"
-export const role = "Frontend Developer"
+export const role = "Full-Stack Engineer"
 
 // End of header
 
@@ -50,20 +58,17 @@ export const aboutCards = [
         id: 1,
         logo: <FaAward aria-hidden="true" />,
         heading: "Experience",
-        description: "2+ years Studying",
+        description: "2+ years",
     },
     {
         id: 2,
         logo: <GoProjectSymlink aria-hidden="true" />,
         heading: "Projects",
-        description: "10+",
+        description: "20+",
     },
 ]
 
-export const aboutInfo = `I have over 2 years of dedicated study and hands-on project
-            experience, creating numerous projects for learning and skill
-            development. While I haven’t yet stepped into a formal job role, I
-            am now fully prepared and eager to begin my professional journey.`
+export const aboutInfo = `I’m a Full Stack Engineer with 2+ years of hands-on experience building responsive, scalable web applications. I work across frontend, backend, APIs, databases, and deployment, with a focus on clean code, performance, and intuitive user experiences.`
 
 // End of About
 
@@ -95,59 +100,72 @@ export const frontEnd = [
     {
         id: 2,
         language: "Next.js",
-        status: "Intermediate",
+        status: "Experienced",
     },
     {
         id: 3,
-        language: "TypeScript",
+        language: "Angular",
         status: "Intermediate",
     },
     {
         id: 4,
-        language: "JavaScript",
+        language: "Tailwind CSS",
         status: "Experienced",
     },
     {
         id: 5,
-        language: "HTML",
+        language: "Bootstrap",
         status: "Experienced",
     },
     {
         id: 6,
-        language: "CSS",
+        language: "Material UI",
+        status: "Experienced",
+    },
+];
+
+export const languages = [
+    {
+        id: 1,
+        language: "JavaScript",
         status: "Experienced",
     },
     {
-        id: 7,
-        language: "Tailwind CSS",
-        status: "Intermediate",
-    },
-]
-
-export const backEnd = [
-    {
-        id: 1,
-        language: "Node.js",
-        status: "Basic",
-    },
-    {
         id: 2,
-        language: "Express.js",
-        status: "Basic",
+        language: "TypeScript",
+        status: "Experienced",
     },
     {
         id: 3,
         language: "Python",
         status: "Basic",
     },
+];
+
+export const backEnd = [
+    {
+        id: 1,
+        language: "Node.js",
+        status: "Experienced",
+    },
+    {
+        id: 2,
+        language: "Express.js",
+        status: "Experienced",
+    },
+    {
+        id: 3,
+        language: "MongoDB",
+        status: "Experienced",
+    },
     {
         id: 4,
-        language: "MongoDB",
-        status: "Basic",
+        language: "SQL",
+        status: "Intermediate",
     },
-]
+];
 
-export const tools = [
+export const versionControl = [
     {
         id: 1,
         language: "Git",
@@ -158,22 +176,30 @@ export const tools = [
         language: "GitHub",
         status: "Experienced",
     },
+];
+
+export const cms = [
+    {
+        id: 1,
+        language: "WordPress",
+        status: "Experienced",
+    },
+    {
+        id: 2,
+        language: "WooCommerce",
+        status: "Experienced",
+    },
     {
         id: 3,
-        language: "Figma",
+        language: "Headless WordPress",
         status: "Intermediate",
     },
     {
         id: 4,
-        language: "Vercel",
-        status: "Intermediate",
-    },
-    {
-        id: 5,
-        language: "Canva",
+        language: "CMS Integration",
         status: "Experienced",
     },
-]
+];
 
 export const other = [
     {
@@ -181,7 +207,47 @@ export const other = [
         language: "Prompt Engineering",
         status: "Experienced",
     },
-]
+    {
+        id: 2,
+        language: "AI Integration",
+        status: "Intermediate",
+    },
+    {
+        id: 3,
+        language: "Generative AI",
+        status: "Intermediate",
+    },
+    {
+        id: 4,
+        language: "Figma",
+        status: "Intermediate",
+    },
+    {
+        id: 5,
+        language: "Canva",
+        status: "Experienced",
+    },
+    {
+        id: 6,
+        language: "Vercel",
+        status: "Experienced",
+    },
+    {
+        id: 7,
+        language: "Clerk",
+        status: "Intermediate",
+    },
+    {
+        id: 8,
+        language: "Vapi AI",
+        status: "Intermediate",
+    },
+    {
+        id: 9,
+        language: "AWS Deployment",
+        status: "Intermediate",
+    },
+];
 
 // End of Experience
 
@@ -287,82 +353,148 @@ export const navLink = [
 export const data = [
     {
         id: 1,
+        image: intelliwriter,
+        title: "IntelliWriter",
+        desc: "AI-powered SEO platform with a responsive dashboard and optimized homepage, focused on performance and faster load times.",
+        tech: "Next.js, TypeScript, Tailwind CSS, Material UI, D3.js, Stripe API",
+        demo: "https://intelliwriter.io/"
+    },
+    {
+        id: 2,
+        image: sigmapublisher,
+        title: "Sigma Publisher",
+        desc: "Online bookstore platform supporting print books, ebooks, and Kindle format sales, integrated with AI, along with Stripe for payments.",
+        tech: "Next.js, TypeScript, Tailwind CSS, Node.js, SQL, Ai integration, PDFLib, Stripe API",
+        demo: "https://sigmapublisher.com/"
+    },
+    {
+        id: 3,
+        image: iamScientist,
+        title: "I am Scientist",
+        desc: "AI education platform enhanced with a registration system, new pages, UI improvements, testing, and issue resolution.",
+        tech: "Next.js, TypeScript, Tailwind CSS, Framer Motion, Stripe API",
+        demo: "https://iamscientist.ai/"
+    },
+    {
+        id: 4,
+        image: blessHomeopathy,
+        title: "Bless Homeopathy",
+        desc: "Homeopathic healthcare website featuring consultation booking and an online product store.",
+        tech: "Next.js, TypeScript, Tailwind CSS, Cal.com",
+        demo: "https://blesshomeopathy.com/"
+    },
+    {
+        id: 5,
+        image: goflixNow,
+        title: "GoFlix-Now",
+        desc: "Complete frontend for a movie and TV streaming platform with a responsive and performance-optimized interface.",
+        tech: "Next.js, TypeScript, Tailwind CSS, HLS.js",
+        demo: "https://goflixnow.com/"
+    },
+    {
+        id: 6,
+        image: ieltsAgent,
+        title: "IELTS Agent",
+        desc: "AI-powered IELTS and PTE mock test platform with instant band score prediction and AI-powered writing and speaking feedback.",
+        tech: "Next.js, TypeScript, Tailwind CSS, Stripe API",
+        demo: "https://ieltsagent.com/"
+    },
+    {
+        id: 7,
+        image: gptProfessor,
+        title: "GPT Professor",
+        desc: "AI research assistant featuring citation generation, literature reviews, topic discovery, PDF chat, and paper formatting.",
+        tech: "Next.js, TypeScript, Tailwind CSS, Clerk, Express.js, PostgreSQL, Tesseract.js",
+        demo: "https://gptprofessor.io/"
+    },
+    {
+        id: 8,
+        image: aiCrews,
+        title: "AI Crews",
+        desc: "Frontend for an AI agent platform featuring specialized agents for HR, Marketing, Sales, Legal, Accounting, Operations, and Security.",
+        tech: "Next.js, TypeScript, Tailwind CSS",
+        demo: "https://aicrews.io/"
+    },
+    {
+        id: 9,
         image: reactportfolio,
         title: "React Portfolio",
-        desc: "A fully functional, dynamic and responsive portfolio made with react to showcase skills and achievements (For Client).",
-        tech: "React.js, Email-js, React-Icons, Swiper.js",
+        desc: "A fully functional, dynamic, and responsive portfolio developed to showcase a client's skills and achievements.",
+        tech: "React.js, EmailJS, React-Icons, Swiper.js",
         github:
             "https://github.com/Abdullah-Logic/react-portfolio",
         demo: "https://abdullah-logic-portfolio.vercel.app/",
     },
     {
-        id: 2,
+        id: 10,
         image: edusity,
         title: "Edusity Website",
-        desc: "This is a clone of the Edusity website replicating its features and functionality (Practice Project).",
+        desc: "A practice project replicating the features and functionality of the Edusity website.",
         tech: "React.js, ReCaptcha, React-Icons",
         github:
             "https://github.com/Abdullah-Logic/edusity-website",
         demo: "https://edusity-website-pearl.vercel.app/",
     },
     {
-        id: 3,
+        id: 11,
         image: quizapp,
         title: "Quiz Application",
-        desc: "A full-stack quiz app built with React, featuring a custom backend and API for dynamic question handling and scoring (Practice Project).",
-        tech: "React.js, Node.js, Express.js, Redux, MongoDb, Axios",
+        desc: "A full-stack MERN quiz application featuring dynamic question handling and interactive quiz functionality.",
+        tech: "React.js, Node.js, Express.js, Redux, MongoDB, Axios",
         github:
             "https://github.com/Abdullah-Logic/quiz-app",
     },
     {
-        id: 4,
+        id: 12,
         image: responsivebakery,
         title: "Virtual Bakery",
-        desc: "This is a responsive bakery website made using HTML, CSS, and JavaScript to showcase client's different product (Practice Project).",
-        tech: "HTML, CSS, JS",
-        github: "https://github.com/Abdullah-Logic/bakery-responsive.git",
+        desc: "A responsive bakery website created to showcase a client's products.",
+        tech: "HTML, CSS, JavaScript",
+        github:
+            "https://github.com/Abdullah-Logic/bakery-responsive.git",
     },
     {
-        id: 5,
+        id: 13,
         image: techdoc,
         title: "Technical Documentation Page",
-        desc: "This is a technical documentation page made that has all the information about Algorithms (Practice Project).",
+        desc: "Technical documentation page presenting information about algorithms in a structured format.",
         tech: "HTML, CSS",
         github:
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/technical_doc_page",
     },
     {
-        id: 6,
+        id: 14,
         image: biakitchen,
         title: "Bia's Baking Kitchen",
-        desc: "This is a bakery website for an online bakery made to reveal its products to the world.",
+        desc: "Bakery website created to showcase products and services for an online bakery.",
         tech: "HTML, CSS",
-        github: "https://github.com/Abdullah-Logic/bias-baking-kitchen.git",
+        github:
+            "https://github.com/Abdullah-Logic/bias-baking-kitchen.git",
         demo: "https://biasbakingkitchen.tiiny.site",
     },
     {
-        id: 7,
+        id: 15,
         image: landingpage,
         title: "Product Landing Page",
-        desc: "This is a simple product landing page made for newly launched prducts (Practice Project).",
+        desc: "Responsive product landing page created to showcase newly launched products.",
         tech: "HTML, CSS",
         github:
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/landing_page",
     },
     {
-        id: 8,
+        id: 16,
         image: tribute,
         title: "Tribute Page",
-        desc: "This tribute page honors the lives and achievements of influential figures, highlighting their impact on society. (Practice Project).",
+        desc: "Tribute page highlighting the lives, achievements, and impact of influential figures.",
         tech: "HTML, CSS",
         github:
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/tribute_page",
     },
     {
-        id: 9,
+        id: 17,
         image: portfolio,
         title: "Simple Portfolio Page",
-        desc: "This is a simple portfolio page made to show my skills and work.",
+        desc: "A simple portfolio website created to showcase skills and projects.",
         tech: "HTML, CSS",
         github:
             "https://github.com/Abdullah-Logic/legacy-responsive-web-design/tree/c99a86f17f6233884a9d4f17550a2e7941981edf/personal_port_page",
@@ -375,57 +507,57 @@ export const data = [
 export const design = [
     {
         id: 1,
-        description: "Create user-centered designs that focus on clear, intuitive interactions.",
+        description: "Create user-centered interfaces with clear, intuitive, and responsive interactions.",
     },
     {
         id: 2,
-        description: "Use basic editing skills to enhance design presentations.",
+        description: "Design layouts, mockups, and prototypes using Figma and Canva.",
     },
     {
         id: 3,
-        description: "Experiment with color schemes, typography, and layouts to align with brand identity.",
+        description: "Apply typography, color, spacing, and visual hierarchy to create polished user experiences.",
     },
 ];
 
 export const webDev = [
     {
         id: 1,
-        description: " Build responsive and interactive pages using HTML, CSS, and JavaScript with advanced proficiency.",
+        description: "Build responsive and scalable web applications using React.js, Next.js, JavaScript, and TypeScript.",
     },
     {
         id: 2,
-        description: "Utilize React at an intermediate level to create reusable, dynamic UI components.",
+        description: "Develop full-stack solutions using Node.js, Express.js, MongoDB, SQL, and REST APIs.",
     },
     {
         id: 3,
-        description: "Implement responsive design techniques for optimal viewing on all device types.",
+        description: "Create reusable UI components and responsive layouts using Tailwind CSS, Bootstrap, and Material UI.",
     },
     {
         id: 4,
-        description: "Apply version control practices with Git to track and manage project changes.",
+        description: "Integrate third-party services, APIs, authentication, and CMS platforms into web applications.",
     },
     {
         id: 5,
-        description: "Use foundational Python and C skills to support logic development and simple automation tasks.",
+        description: "Manage projects with Git and GitHub and deploy applications using platforms such as Vercel and AWS.",
     },
 ];
 
 export const contentCreation = [
     {
         id: 1,
-        description: "Design mockups and prototypes to showcase ideas and enhance communication with stakeholders.",
+        description: "Create polished visual assets, mockups, and presentations for digital projects.",
     },
     {
         id: 2,
-        description: "Produce visually appealing image-based content for various digital platforms.",
+        description: "Develop engaging graphics and promotional content using Canva and Figma.",
     },
     {
         id: 3,
-        description: "Create simple video content to support marketing or instructional objectives.",
+        description: "Use AI tools and prompt engineering to enhance content creation and development workflows.",
     },
     {
         id: 4,
-        description: "Bring a creative approach to each project, crafting content that resonates with target audiences.",
+        description: "Combine technical and creative skills to deliver clear, engaging digital experiences.",
     },
 ];
 
